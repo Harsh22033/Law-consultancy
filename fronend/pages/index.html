@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexConnect - Find the Right Lawyer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Lex<span>Connect</span></a>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="lawyer-login.html" class="lawyer-link">Are you a Lawyer?</a>
+                <a href="client-login.html" class="login-link">Log In/Sign up</a>
+                <a href="#" class="btn btn-primary">Post a Case</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <h1>Find the Right Lawyer. <br><span class="highlight">Right Now.</span></h1>
+                <p class="sub-headline">
+                    Connect with top-rated, vetted attorneys for your personal or business legal needs. 
+                    Transparent pricing. No hidden fees.
+                </p>
+                
+                <div class="search-module">
+                    <form id="searchForm" class="search-form">
+                        <div class="input-group">
+                            <i class="fas fa-gavel input-icon"></i>
+                            <select id="categorySelect" required>
+                                <option value="" disabled selected>What legal help do you need?</option>
+                                <option value="Family Law">Family Law & Divorce</option>
+                                <option value="Corporate Law">Buisness & Corporate Law</option>
+                                <option value="Criminal Defense">Criminal Defense</option>
+                                <option value="Real Estate">Real Estate</option>
+                                <option value="intelectual property">intelectual property</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary search-btn">Search Lawyers</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="icon-box"><i class="fas fa-clipboard-list"></i></div>
+                    <h3>1. Tell us your details</h3>
+                    <p>Select your legal category to find specialists.</p>
+                </div>
+                <div class="process-step">
+                    <div class="icon-box"><i class="fas fa-balance-scale"></i></div>
+                    <h3>2. Compare profiles</h3>
+                    <p>Review experience, education, and client ratings.</p>
+                </div>
+                <div class="process-step">
+                    <div class="icon-box"><i class="fas fa-handshake"></i></div>
+                    <h3>3. Hire with confidence</h3>
+                    <p>Connect directly with the attorney that fits your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container trust-wrapper">
+            <div class="trust-content">
+                <h2>Why Hire Through LexConnect?</h2>
+                <ul class="trust-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Bar License Verification</strong>
+                            <p>We check the standing of every lawyer against State Bar records.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <strong>Verified Client Reviews</strong>
+                            <p>Read reviews from clients who have actually worked with these attorneys.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-tag"></i>
+                        <div>
+                            <strong>Clear Fee Structures</strong>
+                            <p>See hourly rates or fixed-fee packages upfront before you hire.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="trust-image">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop" alt="Meeting">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Top Rated Attorneys</h2>
+            <div class="attorney-grid">
+                <div class="attorney-card-home">
+                    <div class="attorney-header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lawyer">
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <span class="specialty">Family Law</span>
+                        </div>
+                    </div>
+                    <div class="rating"><i class="fas fa-star"></i> 5.0 <span>(85 reviews)</span></div>
+                    <p class="attorney-bio">15 years of experience helping families navigate divorce and custody.</p>
+                    <a href="lawyers.html" class="btn btn-outline">View Profile</a>
+                </div>
+                <div class="attorney-card-home">
+                    <div class="attorney-header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Lawyer">
+                        <div>
+                            <h4>James Carter</h4>
+                            <span class="specialty">Corporate Law</span>
+                        </div>
+                    </div>
+                    <div class="rating"><i class="fas fa-star"></i> 4.9 <span>(120 reviews)</span></div>
+                    <p class="attorney-bio">Expert in startups, mergers, and intellectual property compliance.</p>
+                    <a href="lawyers.html" class="btn btn-outline">View Profile</a>
+                </div>
+                <div class="attorney-card-home">
+                    <div class="attorney-header">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Lawyer">
+                        <div>
+                            <h4>David Ross</h4>
+                            <span class="specialty">Criminal Defense</span>
+                        </div>
+                    </div>
+                    <div class="rating"><i class="fas fa-star"></i> 4.8 <span>(200 reviews)</span></div>
+                    <p class="attorney-bio">Aggressive defense strategy for DUI and traffic violations.</p>
+                    <a href="lawyers.html" class="btn btn-outline">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>LexConnect</h3>
+                <p>Making legal help accessible, transparent, and secure for everyone.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LexConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
